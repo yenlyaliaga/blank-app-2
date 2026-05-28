@@ -63,8 +63,8 @@ st.markdown(
     """
     <div class='message'>
     Hoy celebramos nuestro aniversario y todos los recuerdos hermosos que hemos construido juntos 💕<br><br>
-    Gracias por tu cariño, paciencia y por hacer cada día especial. ✨<br><br>
-    Espero seguir compartiendo muchos momentos más contigo. 💖
+    Gracias por hacer cada día especial. ✨<br><br>
+    Te quieroamo. 💖
     </div>
     """,
     unsafe_allow_html=True,
