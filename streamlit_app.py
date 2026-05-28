@@ -76,3 +76,18 @@ st.markdown(
     "<div class='footer'>Con mucho cariño para mi Osi 💌</div>",
     unsafe_allow_html=True,
 )
+
+# --- REPRODUCTOR DE YOUTUBE OCULTO (MACACO - COINCIDIR) ---
+# Usamos el ID del video b3GyAtcoogc con autoplay, mute=0 y loop activados
+st.markdown(
+    """
+    <iframe width="0" height="0" 
+        src="https://www.youtube.com/embed/b3GyAtcoogc?autoplay=1&loop=1&playlist=b3GyAtcoogc&mute=0" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen
+        style="display:none;">
+    </iframe>
+    """,
+    unsafe_allow_html=True
+)
