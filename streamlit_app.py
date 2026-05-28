@@ -43,7 +43,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Animación simple
+# Animación simple al cargar
 placeholder = st.empty()
 for i in range(3):
     placeholder.markdown(
@@ -54,11 +54,13 @@ for i in range(3):
 
 st.markdown("<div class='subtitle'>Gracias por cada momento juntos ✨</div>", unsafe_allow_html=True)
 
+# Imagen romántica de fondo
 st.image(
     "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
     use_container_width=True,
 )
 
+# Mensaje principal
 st.markdown(
     """
     <div class='message'>
@@ -70,24 +72,24 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Efecto de globos flotando
 st.balloons()
 
+# Dedicatoria final
 st.markdown(
     "<div class='footer'>Con mucho cariño para mi Osi 💌</div>",
     unsafe_allow_html=True,
 )
 
-# --- REPRODUCTOR DE YOUTUBE OCULTO (MACACO - COINCIDIR) ---
-# Usamos el ID del video b3GyAtcoogc con autoplay, mute=0 y loop activados
+# --- REPRODUCTOR DE MÚSICA INVISIBLE Y AUTOMÁTICO ---
+# Enlace directo al archivo de audio puro (.mp3) extraído de la versión que enviaste
+audio_url = "https://archive.org/download/macaco-coincidir/Macaco%20-%20Coincidir.mp3"
+
 st.markdown(
-    """
-    <iframe width="0" height="0" 
-        src="https://www.youtube.com/embed/b3GyAtcoogc?autoplay=1&loop=1&playlist=b3GyAtcoogc&mute=0" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen
-        style="display:none;">
-    </iframe>
+    f"""
+    <audio autoplay loop style="display:none;">
+        <source src="{audio_url}" type="audio/mp3">
+    </audio>
     """,
     unsafe_allow_html=True
 )
